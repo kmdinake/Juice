@@ -19,10 +19,11 @@ class Blender {
 		static bool validAction(String);
 		static bool validCommand(String);
 	private:
+		Juice * juicer;
 		Vector< Juice *> juiceTray;
 		Vector< String > actionList;
 		Vector< String > commandlist;
 		void init(); // adds all the juices etc...
 };
 
-#endif 
+#endif

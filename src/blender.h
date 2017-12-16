@@ -14,15 +14,15 @@ using namespace std;
 class Blender {
 	public:
 		Blender();
-		void setJuiceTo(String);
+		void setJuiceTo(String); // based on the string will instatiate the correct subtype of juice
 		void mixItAllUp();
 		static bool validAction(String);
 		static bool validCommand(String);
 	private:
-		Vector< Juice *> juiceTray;
+		Juice juice;
 		Vector< String > actionList;
 		Vector< String > commandlist;
-		void init(); // adds all the juices etc...
+		void init(); // adds all the valid actions & commands
 };
 
 #endif 
